@@ -28,7 +28,6 @@ def get_data_ifs(values, conditions, criteria):
     return [rain for rain, year in zip(values, conditions) if year == criteria]
 
 def main():
-    # 방법1 (리스트 두개 값 비교해서 원하는거 뽑아냄)
     rainfall = read_col("weather(146)_2001-2022.csv", 9)
     year = read_col_int("weather(146)_2001-2022.csv", 0)
     rainfall_2021 = get_data_ifs(rainfall, year, 2021)
