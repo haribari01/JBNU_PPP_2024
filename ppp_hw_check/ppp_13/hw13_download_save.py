@@ -12,9 +12,6 @@ if not os.path.exists(filename):
 
 with open(filename, "r") as f:
     lines = f.readlines()
-# 연평균기온을 구하고 파일을 불러온 후 다음 5mm이상 강우일수를 구할때 오류가 납니다. 그래서 파일을 지웠다가 결과를 보고 다시 지웠다가 결과를 보는식으로
-# 과제를 진행했는데 index부분에서 오류가 나는것 같습니다.
-# 과제에 있는 3가지 문제의 결과를 파일에 저장한 후 새로운 결과값을 추가하고 저장하고 싶으면 파일을 지웠다가 다시 받는 방법말고 어떤방법으로 진행해야할까요?
 
 tavg_list = []
 rainfall_list = []
